@@ -1,0 +1,11 @@
+image:
+- Visual Studio 2017
+- Ubuntu
+
+build:
+  project: src
+
+configuration:
+- Release
+
+test:
