@@ -19,5 +19,5 @@ for:
     only:
     - image: Ubuntu
 
-  text_script:
+  test_script:
   - mono ~/.nuget/packages/xunit.runner.console/2.4.1/tools/net472/xunit.console.exe src/DemoLib.Tests/bin/Release/net472/DemoLib.Tests.dll
