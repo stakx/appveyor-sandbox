@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>
@@ -17,9 +22,5 @@
   <ItemGroup>
     <ProjectReference Include="..\DemoLib\DemoLib.csproj" />
   </ItemGroup>
-
-  <Target Name="ShowFrameworkPathOverride" BeforeTargets="CoreCompile">
-    <Message Importance="High" Text="'FrameworkPathOverride' is: $(FrameworkPathOverride)" />
-  </Target>
 
 </Project>
