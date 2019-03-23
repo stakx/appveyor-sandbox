@@ -1,5 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="$(MSBuildThisFileDirectory)../../build/MonoReferenceAssemblies.props" />
+
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp2.1</TargetFrameworks>
   </PropertyGroup>
