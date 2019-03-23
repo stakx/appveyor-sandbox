@@ -18,4 +18,8 @@
     <ProjectReference Include="..\DemoLib\DemoLib.csproj" />
   </ItemGroup>
 
+  <Target Name="ShowFrameworkPathOverride" BeforeTargets="CoreCompile">
+    <Message Importance="High" Text="'FrameworkPathOverride' is: $(FrameworkPathOverride)" />
+  </Target>
+
 </Project>
